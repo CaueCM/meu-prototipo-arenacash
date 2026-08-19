@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indique um amigo e ganhe R$ 50 | ArenaCash</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+      color: #0b1f3a;
+    }
+
+    .slide {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 85% 20%, rgba(52, 125, 255, 0.18), transparent 30%),
+        linear-gradient(135deg, #ffffff 0%, #f4f8ff 100%);
+    }
+
+    .slide::before {
+      content: "";
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      background: #0b63f6;
+      opacity: 0.08;
+      right: -140px;
+      bottom: -160px;
+    }
+
+    .content {
+      width: min(1100px, 90%);
+      position: relative;
+      z-index: 1;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 70px;
+      font-size: 24px;
+      font-weight: 800;
+      color: #0b63f6;
+      letter-spacing: -0.5px;
+    }
+
+    .brand-mark {
+      width: 38px;
+      height: 38px;
+      border-radius: 11px;
+      background: #0b63f6;
+      display: grid;
+      place-items: center;
+      color: white;
+      font-size: 19px;
+      box-shadow: 0 8px 24px rgba(11, 99, 246, 0.25);
+    }
+
+    .eyebrow {
+      color: #0b63f6;
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      max-width: 850px;
+      font-size: clamp(48px, 7vw, 88px);
+      line-height: 0.98;
+      letter-spacing: -4px;
+      margin-bottom: 28px;
+    }
+
+    h1 span {
+      color: #0b63f6;
+    }
+
+    .subtitle {
+      max-width: 620px;
+      color: #53657d;
+      font-size: clamp(18px, 2vw, 22px);
+      line-height: 1.5;
+      margin-bottom: 40px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 16px 28px;
+      border-radius: 12px;
+      background: #0b63f6;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: 700;
+      box-shadow: 0 12px 30px rgba(11, 99, 246, 0.25);
+    }
+
+    .button:hover {
+      background: #0955d5;
+    }
+
+    .badge {
+      position: absolute;
+      right: 8%;
+      top: 50%;
+      transform: translateY(-50%) rotate(5deg);
+      width: 210px;
+      height: 210px;
+      border-radius: 50%;
+      background: #0b63f6;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-weight: 800;
+      font-size: 28px;
+      line-height: 1.05;
+      box-shadow: 0 25px 60px rgba(11, 99, 246, 0.25);
+    }
+
+    @media (max-width: 800px) {
+      .brand {
+        margin-bottom: 50px;
+      }
+
+      .badge {
+        display: none;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="slide">
+    <div class="content">
+      <div class="brand">
+        <div class="brand-mark">A</div>
+        ArenaCash
+      </div>
+
+      <div class="eyebrow">Campanha especial</div>
+
+      <h1>
+        Indique um amigo<br>
+        e ganhe <span>R$ 50</span>
+      </h1>
+
+      <p class="subtitle">
+        Compartilhe a ArenaCash com quem você gosta e transforme suas indicações
+        em dinheiro.
+      </p>
+
+      <a href="#" class="button">Saiba mais</a>
+    </div>
+
+    <div class="badge">
+      R$ 50<br>
+      por indicação
+    </div>
+  </main>
+</body>
+</html>
